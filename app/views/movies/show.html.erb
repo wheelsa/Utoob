@@ -2,8 +2,11 @@
 
 
  <h5 ><%= @movie.title %></h5>
+  
   <p><%= "duration: #{@movie.duration}" %></p>
   <p><%= "Genre: #{@movie.genre}" %></p>
+  <p><%= "Description: #{@movie.description}" %></p>
+
 
   <%= link_to 'Add comment', new_movie_comment_path(@movie) %> 
 

@@ -6,6 +6,7 @@ class CreateMovies < ActiveRecord::Migration[6.0]
       t.string :genre
       t.string :description
       t.string :trailer
+      t.string :image
 
       t.timestamps
     end

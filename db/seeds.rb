@@ -10,9 +10,11 @@ Movie.create(
 title: 'The Dark Night',
 duration: '2hr 32min',
 genre: 'Action',
+image: Rails.root.join("app/assets/images/utoob1.jpg").open,
 description: 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.',
 # 'http://www.imdb.com/title/tt0468569/',
-trailer: 'https://www.youtube.com/embed/EXeTwQWrcwY')
+trailer: 'https://www.youtube.com/embed/EXeTwQWrcwY'
+)
 
 
 Movie.create(
