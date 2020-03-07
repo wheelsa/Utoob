@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
   end
 
   def show
-    comment = @movie.comments.find(params[:id]
+    comment = @movie.comments.find(params[:id])
   end 
 
   def edit
@@ -49,4 +49,5 @@ class CommentsController < ApplicationController
    def comment_params
      params.require(:comment).permit(:role, :user_id)
    end
+
 end

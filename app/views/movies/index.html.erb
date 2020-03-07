@@ -1,21 +1,12 @@
 <h1>Top Movies</h1>
-<p>Find me in app/views/movies/index.html.erb</p>
-
 <p><%= link_to "Add movie", new_movie_path %></p>
 
 <% @movies.each do |movie| %>
   <div class="card" style="width: 18rem;">
   <div class="card-body">
- <h5 class="card-title"><%= movie.title %></h5>
+ <h5 class="card-title"><%= link_to movie.title, movie_path(movie) %></h5>
   <p><%= "duration: #{movie.duration}" %></p>
   <p><%= "Genre: #{movie.genre}" %></p>
-  <p><%= "Description: #{movie.description}" %></p>
-  <p><%= "Trailer: #{movie.trailer}" %></p>
-   <p> <%= link_to "Edit Movie", edit_movie_path(movie)%></p>
-  <p> <%= link_to movie_path(movie), method: :delete do %>
-    Delete
-  <i class="far fa-trash-alt"></i>
-  <% end %></p>
     </div>
 </div>
 <% end %>

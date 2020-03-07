@@ -1,2 +1,28 @@
-<h1>Movies#show</h1>
-<p>Find me in app/views/movies/show.html.erb</p>
+<h1>Top Movies</h1>
+
+
+ <h5 ><%= @movie.title %></h5>
+  <p><%= "duration: #{@movie.duration}" %></p>
+  <p><%= "Genre: #{@movie.genre}" %></p>
+
+  <%= link_to 'Add comment', new_movie_comment_path(@movie) %> 
+
+  <hr>
+   <p> <%= link_to "Edit Movie", edit_movie_path(@movie)%></p>
+
+  
+   
+  <p> <%= link_to movie_path(@movie), method: :delete do %>
+    Delete
+  <i class="far fa-trash-alt"></i>
+    </p>
+<% end %>
+
+	<%= link_to 'Back to all Movies', movies_path %>
+
+  <% @movie.comments.each do |comment| %>
+    <p><%= comment.name %></p>
+     <%= link_to 'Remove From movie', remove_movie_comment_path(@movie, comment), method: :delete %>
+  <% end %>
+
+
