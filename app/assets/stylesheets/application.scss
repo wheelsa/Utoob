@@ -15,7 +15,7 @@
 *= require_self
  */
 
- body {
+ .container {
   margin: 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -25,4 +25,8 @@
 
  h1 {
    text-align: center;
+ }
+
+ .navbar-nav {
+
  }
