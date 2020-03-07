@@ -39,8 +39,8 @@ duration: '1hr 51min',
 genre: 'Action',
 description: 'After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.',
 # 'http://www.imdb.com/title/tt0266697/?ref_=nv_sr_1',
-'After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.',
-trailer: 'https://www.youtube.com/embed/ot6C1ZKyiME')
+trailer: 'https://www.youtube.com/embed/ot6C1ZKyiME'
+)
 
 Movie.create(
 title: 'Gladiator',
@@ -263,7 +263,7 @@ title: 'The Godfather',
 duration: '2hr 55min',
 genre: 'Drama',
 description: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-'http://www.imdb.com/title/tt0068646/',
+# 'http://www.imdb.com/title/tt0068646/',
 trailer: 'https://www.youtube.com/embed/5DO-nDW43Ik'
 )
 
@@ -300,4 +300,5 @@ duration: '1hr 36min',
 genre: 'Drama',
 description: "Wannabe actors become regulars in the stylish neo-lounge scene; Trent teaches his friend Mike the unwritten rules of the scene.",
 # 'http://www.imdb.com/title/tt0117802/',
-trailer: 'https://www.youtube.com/embed/nWCct8XbQD0)
+trailer: 'https://www.youtube.com/embed/nWCct8XbQD0'
+)
