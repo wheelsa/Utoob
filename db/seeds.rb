@@ -31,6 +31,7 @@ Movie.create(
 title: 'Avatar',
 duration: '2hr 42min',
 genre: 'Action',
+image: 'https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg'
 description: 'A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.',
 # 'http://www.imdb.com/title/tt0499549/?ref_=fn_al_tt_1',
 trailer: 'https://www.youtube.com/embed/5PSNL1qE6VY'
@@ -40,6 +41,7 @@ Movie.create(
 title: 'Kill Bill Vol 1',
 duration: '1hr 51min',
 genre: 'Action',
+image: 'https://m.media-amazon.com/images/M/MV5BNzM3NDFhYTAtYmU5Mi00NGRmLTljYjgtMDkyODQ4MjNkMGY2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY1200_CR85,0,630,1200_AL_.jpg'
 description: 'After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.',
 # 'http://www.imdb.com/title/tt0266697/?ref_=nv_sr_1',
 trailer: 'https://www.youtube.com/embed/ot6C1ZKyiME'
@@ -48,6 +50,7 @@ trailer: 'https://www.youtube.com/embed/ot6C1ZKyiME'
 Movie.create(
 title: 'Gladiator',
 duration: '2hr 35min',
+image: 'https://upload.wikimedia.org/wikipedia/en/f/fb/Gladiator_%282000_film_poster%29.png'
 genre: 'Action',
 description: 'A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.',
 # 'http://www.imdb.com/title/tt0172495/?ref_=nv_sr_1',
@@ -58,6 +61,7 @@ Movie.create(
 title: 'The Rock',
 duration: '2hr 16min',
 genre: 'Action',
+image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rottentomatoes.com%2Fm%2F1072011_rock&psig=AOvVaw1CbuNMzY4O6qE7iNen5Sf7&ust=1583710444150000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjD1KbDiegCFQAAAAAdAAAAABAD'
 description: 'A mild-mannered chemist and an ex-con must lead the counterstrike when a rogue group of military men, led by a renegade general, threaten a nerve gas attack from Alcatraz against San Francisco.',
 # 'http://www.imdb.com/title/tt0117500/',
 trailer: 'https://www.youtube.com/embed/313n0wga2xo'
@@ -67,6 +71,8 @@ Movie.create(
 title: 'Jaws',
 duration: '2hr 4min',
 genre: 'Action',
+image: 'https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY1200_CR76,0,630,1200_AL_.jpg'
+
 description: "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
 # 'http://www.imdb.com/title/tt0073195/',
 trailer: 'https://www.youtube.com/embed/U1fu_sA7XhE'
@@ -76,6 +82,7 @@ Movie.create(
 title: 'Star Wars Episode IV A New Hope',
 duration: '2hr 1min',
 genre: 'Action',
+image: 'https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY1200_CR76,0,630,1200_AL_.jpg',
 description: "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
 # 'http://www.imdb.com/title/tt0076759/',
 trailer: 'https://www.youtube.com/embed/1g3_CFmnU7k'
@@ -85,6 +92,7 @@ Movie.create(
 title: 'Star Wars Episode V The Empire Strikes Back',
 duration: '2hr 4min',
 genre: 'Action',
+image: 'https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg',
 description: "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and a bounty hunter named Boba Fett all over the galaxy.",
 # 'http://www.imdb.com/title/tt0080684/',
 trailer: 'https://www.youtube.com/embed/mz_YWNhKOkM'
@@ -93,6 +101,7 @@ trailer: 'https://www.youtube.com/embed/mz_YWNhKOkM'
 Movie.create(
 title: 'Star Wars Episode VI Return of the Jedi',
 duration: '2hr 11min',
+image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FStar-Wars-Episode-Empire-Strikes%2Fdp%2F0345320220&psig=AOvVaw1FD75X7rDRbVjx9sOD8yas&ust=1583710688990000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiQr5vEiegCFQAAAAAdAAAAABAD',
 genre: 'Action',
 description: "After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor's trap.",
 # 'http://www.imdb.com/title/tt0086190/',
@@ -103,6 +112,7 @@ Movie.create(
 title: 'Batman Begins',
 duration: '2hr 20min',
 genre: 'Action',
+image: 'https://upload.wikimedia.org/wikipedia/en/a/af/Batman_Begins_Poster.jpg',
 description: "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from corruption.",
 # 'http://www.imdb.com/title/tt0372784/',
 trailer: 'https://www.youtube.com/embed/QhPqez3CwiM'
@@ -112,6 +122,7 @@ Movie.create(
 title: 'Top Gun',
 duration: '1hr 50min',
 genre: 'Action',
+image: "https://images-na.ssl-images-amazon.com/images/I/710nsn-AYoL._SL1140_.jpg",
 description: "As students at the United States Navy's elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom.",
 # 'http://www.imdb.com/title/tt0092099/',
 trailer: 'https://www.youtube.com/embed/qAfbp3YX9F0'
@@ -121,6 +132,7 @@ Movie.create(
 title: 'Dogma',
 duration: '2hr 10min',
 genre: 'Comedy',
+image: 'https://upload.wikimedia.org/wikipedia/en/1/1e/Dogma_%28movie%29.jpg',
 description: "An abortion clinic worker with a special heritage is called upon to save the existence of humanity from being negated by two renegade angels trying to exploit a loop-hole and reenter Heaven.",
 # 'http://www.imdb.com/title/tt0120655/',
 trailer: 'https://www.youtube.com/embed/20CRw3XdETA'
