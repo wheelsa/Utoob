@@ -10,7 +10,7 @@ Movie.create(
 title: 'The Dark Night',
 duration: '2hr 32min',
 genre: 'Action',
-image: Rails.root.join("app/assets/images/utoob1.jpg").open,
+image: 'https://images-na.ssl-images-amazon.com/images/I/81dwqKFOfwL._SL1425_.jpg',
 description: 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.',
 # 'http://www.imdb.com/title/tt0468569/',
 trailer: 'https://www.youtube.com/embed/EXeTwQWrcwY'
@@ -21,6 +21,7 @@ Movie.create(
 title: 'The Bourne Identity',
 duration: '1hr 59min',
 genre: 'Action',
+image: 'https://www.gstatic.com/tv/thumb/v22vodart/28900/p28900_v_v8_ac.jpg',
 description: 'A man is picked up by a fishing boat, bullet-riddled and suffering from amnesia, before racing to elude assassins and attempting to regain his memory.',
 # 'http://www.imdb.com/title/tt0258463/',
 trailer: 'https://www.youtube.com/embed/cD-uQreIwEk'
