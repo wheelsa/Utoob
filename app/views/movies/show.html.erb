@@ -3,12 +3,14 @@
    <br />
    <br />
 
- <h5 ><%= @movie.title %></h5>
-  
+ <h2 ><%= @movie.title %></h2>
+  <img class="responsive-img" src="<%=movie.image%>">
   <p><%= "duration: #{@movie.duration}" %></p>
   <p><%= "Genre: #{@movie.genre}" %></p>
   <p><%= "Description: #{@movie.description}" %></p>
-
+  <br />
+  <h3> Trailer </h3>
+  <iframe width="560" height="315" src="<%=@movie.trailer%>" allowfullscreen></iframe>
 
 <%= link_to 'Add Comment', new_movie_comment_path(@movie)%>
 
@@ -18,7 +20,7 @@
    <p> <%= link_to "Edit Movie", edit_movie_path(@movie)%></p>
   <p> <%= link_to movie_path(@movie), method: :delete do %>
     Delete
-  <i class="far fa-trash-alt"></i>
+
     </p>
 <% end %>
 

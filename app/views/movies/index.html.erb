@@ -1,9 +1,8 @@
-<div class="container">
-<h1>Top Movies</h1>
-<hr>
-<p><%= link_to "Add movie", new_movie_path %></p>
-<hr>
-
+ <div class="container"> 
+  <h1>Top Movies</h1>
+  <hr>
+  <p><%= link_to "Add movie", new_movie_path %></p>
+  <hr>
   <% @movies.each do |movie| %>
     <div class="card" style="width: 18rem;">
       <div class="card-body">
@@ -14,6 +13,6 @@
         <p><%= "Genre: #{movie.genre}" %></p>
       </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
 </div>
+>>>>>>> e3509abb04b43c802b49618d00e953b2a801ff87
