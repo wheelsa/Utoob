@@ -1,0 +1,15 @@
+
+<%= form_with(scope: :comment, url:"/movies/#{@movie.id}/comments", local: true) do |f| %>
+  <div class="field"> 
+    <%= f.label :body %>
+    <%= f.text_area :body, placeholder:
+    "Place your comments here " %>
+    <%f.text_field :user_id, value: current_user.id%>
+  </div>
+  <%= f.submit class: "ui green button inverted" %>
+
+  <%end%>
+
+
+
+  
