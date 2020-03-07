@@ -4,28 +4,27 @@
    <br />
 
  <h2 ><%= @movie.title %></h2>
-  <img class="responsive-img" src="<%=movie.image%>">
-  <p><%= "duration: #{@movie.duration}" %></p>
-  <p><%= "Genre: #{@movie.genre}" %></p>
-  <p><%= "Description: #{@movie.description}" %></p>
+  <img class="images" src="<%=@movie.image%>">
   <br />
   <h3> Trailer </h3>
   <iframe width="560" height="315" src="<%=@movie.trailer%>" allowfullscreen></iframe>
+  <p><%= "Description: #{@movie.description}" %></p>
+  <p><%= "Genre: #{@movie.genre}" %></p>
+  <p><%= "duration: #{@movie.duration}" %></p>
 
 <%= link_to 'Add Comment', new_movie_comment_path(@movie)%>
 
   <br />
 
   <hr>
-   <p> <%= link_to "Edit Movie", edit_movie_path(@movie)%></p>
+  <p> <%= link_to "Edit Movie", edit_movie_path(@movie)%></p>
   <p> <%= link_to movie_path(@movie), method: :delete do %>
     Delete
-
-    </p>
+  </p>
 <% end %>
 
 
-<hr />
+<hr/>
 
 <ul>
     <% @movie.comments.each do |comment|%>

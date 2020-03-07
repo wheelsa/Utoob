@@ -7,12 +7,11 @@
     <div class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title"><%= link_to movie.title, movie_path(movie) %></h5>
-        <img <%= "Image: #{movie.image}" %>>
-        <img src="<%=movie.image%>">
+        <img class="images"src="<%=movie.image%>">
         <p><%= "duration: #{movie.duration}" %></p>
         <p><%= "Genre: #{movie.genre}" %></p>
       </div>
     </div>
   <% end %>
 </div>
->>>>>>> accb8bdb1cc288fb1de331d342184feced741c39
+

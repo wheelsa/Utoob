@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'static_pages/about'
-  root "static_pages#home"
+  root "movies#index"
   resources :movies do 
     resources :comments, only: [:index, :new, :create, :destroy]
   end 
