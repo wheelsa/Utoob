@@ -1,12 +1,16 @@
 <h1>Top Movies</h1>
+<hr>
 <p><%= link_to "Add movie", new_movie_path %></p>
+<hr>
 
 <% @movies.each do |movie| %>
   <div class="card" style="width: 18rem;">
-  <div class="card-body">
- <h5 class="card-title"><%= link_to movie.title, movie_path(movie) %></h5>
-  <p><%= "duration: #{movie.duration}" %></p>
-  <p><%= "Genre: #{movie.genre}" %></p>
+    <div class="card-body">
+      <h5 class="card-title"><%= link_to movie.title, movie_path(movie) %></h5>
+      <img <%= "Image: #{movie.image}" %>>
+      <img src="<%=movie.image%>">
+      <p><%= "duration: #{movie.duration}" %></p>
+      <p><%= "Genre: #{movie.genre}" %></p>
     </div>
-</div>
+  </div>
 <% end %>

@@ -1,28 +1,38 @@
 <h1>Top Movies</h1>
-
+	<%= link_to 'Back to all Movies', movies_path %>
+   <br />
+   <br />
 
  <h5 ><%= @movie.title %></h5>
+  
   <p><%= "duration: #{@movie.duration}" %></p>
   <p><%= "Genre: #{@movie.genre}" %></p>
+  <p><%= "Description: #{@movie.description}" %></p>
 
-  <%= link_to 'Add comment', new_movie_comment_path(@movie) %> 
+
+<%= link_to 'Add Comment', new_movie_comment_path(@movie)%>
+
+  <br />
 
   <hr>
    <p> <%= link_to "Edit Movie", edit_movie_path(@movie)%></p>
-
-  
-   
   <p> <%= link_to movie_path(@movie), method: :delete do %>
     Delete
   <i class="far fa-trash-alt"></i>
     </p>
 <% end %>
 
-	<%= link_to 'Back to all Movies', movies_path %>
 
-  <% @movie.comments.each do |comment| %>
-    <p><%= comment.name %></p>
-     <%= link_to 'Remove From movie', remove_movie_comment_path(@movie, comment), method: :delete %>
-  <% end %>
+<hr />
 
+<ul>
+    <% @movie.comments.each do |comment|%>
+      <li>
+        <h3><%=comment.user.email%> </h3>
+        <h3><%=comment.body%> </h3>
+        <%= link_to 'Remove', movie_comment_path(@movie, comment), method: :delete %>
+        <br />
+      </li>
+    <%end%>
+</ul>
 
